@@ -1,1 +1,41 @@
-/*  your css code here. If applicable */
+/* 1. Set background color using :root */
+:root {
+  background-color: rgb(135, 206, 235);
+}
+
+/* 2. Paragraph Styling */
+article p:first-child {
+  color: white;
+  background-color: black;
+}
+
+article p:nth-child(2) {
+  color: initial; /* default browser color */
+}
+
+article p:last-child {
+  color: red;
+}
+
+/* 3. Unordered List Styling */
+ul li {
+  width: 50%;
+  padding: 10px;
+  background-color: gray;
+}
+
+/* 3a. Odd list items: white background */
+ul li:nth-child(odd) {
+  background-color: white;
+}
+
+/* 3b. First and last list item: font size 22px */
+ul li:first-child,
+ul li:last-child {
+  font-size: 22px;
+}
+
+/* 3c. Third-to-last item (Item 3 in 5-item list) */
+ul li:nth-last-child(3) {
+  background-color: pink;
+}
